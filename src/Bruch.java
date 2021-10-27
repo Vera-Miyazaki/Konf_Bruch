@@ -2,8 +2,11 @@ public class Bruch {
     private int numerator; // Zähler
     private int denominator; // Nenner
 
-    public Bruch(int numerator, int denominator) {
+    public Bruch(int numerator, int denominator)
+    {
         // TODO: Setzen Sie die Attribute entsprechend
+        this.numerator = numerator;
+        this.denominator = denominator;
     }
 
     public int getNumerator() {
