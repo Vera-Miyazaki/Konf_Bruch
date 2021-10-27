@@ -9,18 +9,30 @@ public class Bruch {
         this.denominator = denominator;
     }
 
-    public int getNumerator() {
+    public int getNumerator()
+    {
         return numerator;
     }
 
-    public int getDenominator() {
+    public int getDenominator()
+    {
         return denominator;
     }
 
-    public double toDecimal() {
+    public double toDecimal()
+    {
         // TODO: Die Methode soll den Dezimalwert zum Bruch retournieren
         // Achtung: Ganzzahldivision!
-        return 0;
+
+        double a = numerator;
+        double b = denominator;
+        if (this.denominator != 0)
+        {
+            double result = a/b;
+            return result;
+        } else {
+            return 0;
+        }
     }
 
     public String print() {
